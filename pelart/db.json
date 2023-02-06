@@ -1,0 +1,65 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Sunrise",
+            "image": "Sunrise.png",
+            "isLoved": true
+        },
+        {
+            "id": 2,
+            "title": "Love",
+            "image": "Love.png",
+            "isLoved": true
+        },
+        {
+            "id": 3,
+            "title": "Blocky",
+            "image": "Blocky.png",
+            "isLoved": false
+        },
+        {
+            "id": 4,
+            "title": "Apocalypse",
+            "image": "Apocalypse.png",
+            "isLoved": false
+        },
+        {
+            "id": 5,
+            "title": "Psych",
+            "image": "Psych.png",
+            "isLoved": true
+        },
+        {
+            "id": 6,
+            "title": "Sunswirl",
+            "image": "Sunswirl.png",
+            "isLoved": false
+        },
+        {
+            "id": 7,
+            "title": "Pool",
+            "image": "Pool.png",
+            "isLoved": true
+        },
+        {
+            "id": 8,
+            "title": "Modern",
+            "image": "Modern.png",
+            "isLoved": false
+        },
+        {
+            "id": 9,
+            "title": "Gross",
+            "image": "Gross.png",
+            "isLoved": false
+        },
+        {
+            "id": 10,
+            "title": "Desert",
+            "image": "Desert.png",
+            "isLoved": true
+        }
+    ],
+    "loved": []
+}
