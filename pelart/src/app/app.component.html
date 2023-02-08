@@ -1,3 +1,7 @@
 <app-navbar></app-navbar>
 <h1>Hello world!</h1>
+<input type="text" (change)="getName(name.value)" #name/> <br/>
+<input type="file" (change)="getFile($event)"/> <br/>
+<input type="button" (click)="submitData()" value="Upload file" />
+
 <router-outlet></router-outlet>
