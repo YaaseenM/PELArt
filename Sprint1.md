@@ -14,7 +14,8 @@ As an employer of artists, I want to be able to discover and get to know artists
 certain tags, so that I can discover new talent that abides by a certain theme.
  
 Issues we planned to address:
-
+- Making the base framework of the website
+Successfully made a very basic application complete with multiple pages, and a navigation bar to route to them
 - General lack of experience
 As none of us had a strong background in JavaScript and application design, we made the decision
 to create two versions of a basic front-end application amongst the front-end team. 
