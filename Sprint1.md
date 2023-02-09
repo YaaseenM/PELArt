@@ -22,3 +22,5 @@ to create two versions of a basic front-end application amongst the front-end te
 - Lack of backend
 Since we do not have a functioning backend, we implemented a json-server that feeds data to 
 the application from a single .db file.
+- REST API
+Basic functions such as json are unable to work. A layout of a simple REST API was created but is unable to run due to import errors.
