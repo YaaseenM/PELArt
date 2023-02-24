@@ -24,3 +24,5 @@ Since we do not have a functioning backend, we implemented a json-server that fe
 the application from a single .db file.
 - REST API
 Basic functions such as json are unable to work. A layout of a simple REST API was created but is unable to run due to import errors.
+- Image API
+Create an Image API for photo files that read in and output images to the front-end
