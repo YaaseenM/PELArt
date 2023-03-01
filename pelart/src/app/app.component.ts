@@ -28,8 +28,7 @@ export class AppComponent {
       fd.set("name",this.name)
       fd.set("file",this.file)
 
-      //Doesnt work, requires api from backend
-      this.http.post('http://localhost:4200/fileupload', fd).subscribe(
+      this.http.post('http://localhost:3000/posts', fd).subscribe(
         (response)=>{
 
         }
