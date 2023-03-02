@@ -12,6 +12,12 @@
       "email": "james@fan.com",
       "password": "likewise",
       "id": 1
+    },
+    {
+      "fullname": "Derek Meyer",
+      "email": "djmeyer18@gmail.com",
+      "password": "amberjack1",
+      "id": 2
     }
   ],
   "profile": {
