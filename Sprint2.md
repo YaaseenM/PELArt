@@ -6,3 +6,5 @@ We were able to fix problems with the go get vs go install commands. The reposit
 
   Frontend Cypress:
   Added mounting for the compenents, as well as a specific test for the app component checking the default input for the file upload function
+
+   In the backend, we will have two portions. One portion being the title and the second being the body. We use six functions to create the functioanlity of the backend api. Main.go starts up the functions get, post, and ping. We have the newsfeeder which has the basic functions for the backend such as adding an item onto the list and getting all items from the list. The three functions inside the handler folder are used to link up the api data with angular.
