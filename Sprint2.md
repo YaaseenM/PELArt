@@ -3,3 +3,6 @@ We were able to fix problems with the go get vs go install commands. The reposit
   For the backend tests:
   We added ability to get REST information from the front-end to the backend (add items, retrieve items).
   We added ability to use get all functions to get items from the back-end API. 
+
+  Frontend Cypress:
+  Added mounting for the compenents, as well as a specific test for the app component checking the default input for the file upload function
