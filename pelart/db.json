@@ -6,11 +6,12 @@
       "author": "typicode"
     }
   ],
-  "comments": [
+  "signupUsers": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "fullname": "Derek Meyer",
+      "email": "james@fan.com",
+      "password": "likewise",
+      "id": 1
     }
   ],
   "profile": {
