@@ -1,1 +1,24 @@
-<p>profile works!</p>
+<div>
+    <div>
+        <div>Title</div>
+        <input [(ngModel)]="title"
+        type="text"
+        placeholder="Enter your Title">
+    </div>
+    <div>
+        <div>Post</div>
+        <input [(ngModel)]="post"
+         type="text" placeholder="Enter your Post ">
+    </div>
+    <button (click)="addPost()">Add Post</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<div *ngFor="let newsfeedItem of newsfeedItems">
+    <div>{{newsfeedItem.title}}</div>
+    <div>{{newsfeedItem.post}}</div>
+    <br>
+</div>
