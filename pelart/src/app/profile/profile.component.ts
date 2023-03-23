@@ -4,8 +4,8 @@ import { interval, take, lastValueFrom } from 'rxjs';
 
 
 interface INewsfeedItem{
-  title: string
-  post: string
+  email: string
+  password: string
 }
 
 @Component({
@@ -14,8 +14,8 @@ interface INewsfeedItem{
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit{
-  title=''
-  post=''
+  email=''
+  password=''
   public newsfeedItems: INewsfeedItem[]=[]
 
   constructor(
@@ -34,11 +34,11 @@ export class ProfileComponent implements OnInit{
 
   async addPost(){
     await lastValueFrom(this.httpClient.post('/api/newsfeed', {
-      title: this.title,
-      post: this.post
+      email: this.email,
+      password: this.password
     }))
     this.loadNewsItems()
-    this.title=''
-    this.post=''
+    this.email=''
+    this.password=''
   }
 }

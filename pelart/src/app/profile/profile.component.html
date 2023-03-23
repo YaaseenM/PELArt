@@ -1,13 +1,13 @@
 <div>
     <div>
         <div>Title</div>
-        <input [(ngModel)]="title"
+        <input [(ngModel)]="email"
         type="text"
         placeholder="Enter your Title">
     </div>
     <div>
         <div>Post</div>
-        <input [(ngModel)]="post"
+        <input [(ngModel)]="password"
          type="text" placeholder="Enter your Post ">
     </div>
     <button (click)="addPost()">Add Post</button>
@@ -18,7 +18,7 @@
 <br>
 
 <div *ngFor="let newsfeedItem of newsfeedItems">
-    <div>{{newsfeedItem.title}}</div>
-    <div>{{newsfeedItem.post}}</div>
+    <div>{{newsfeedItem.email}}</div>
+    <div>{{newsfeedItem.password}}</div>
     <br>
 </div>

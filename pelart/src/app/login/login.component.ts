@@ -20,7 +20,7 @@ export class LoginComponent {
     })
   }
   login(){
-    this.http.get<any>("http://localhost:3000/signupUsers")
+    this.http.get<any>("/api/newsfeed")
     .subscribe(res=>{
       const user=res.find((a:any)=>{
         return a.email===this.loginForm.value.email&&a.password===this.loginForm.value.password

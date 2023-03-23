@@ -20,7 +20,7 @@ export class SignupComponent {
     })
   }
   signUp(){
-    this.http.post<any>("http://localhost:3000/signupUsers",this.signupForm.value)
+    this.http.post<any>("/api/newsfeed",this.signupForm.value)
     .subscribe(res=>{
       alert("Signup Sucessful");
       this.signupForm.reset();
