@@ -4,7 +4,7 @@ import "testing"
 
 func TestAdd(t *testing.T) {
 	feed := New()
-	feed.Add(Item{"An Item!", "With Body"})
+	feed.Add(Item{"An Item!", "With Body", "AND MORE"})
 	if len(feed.Items) == 0 {
 		t.Errorf("Item was not added")
 	}

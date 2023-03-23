@@ -9,8 +9,9 @@ type Adder interface {
 }
 
 type Item struct {
-	Title string `json:"title"`
-	Post string `json:"post"`
+	Email string `json:"email"`
+	Password string `json:"password"`
+	FullName string `json:"fullname"`
 }
 
 type Repo struct {
