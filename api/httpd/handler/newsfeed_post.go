@@ -8,8 +8,9 @@ import (
 )
 
 type newsfeedPostRequest struct {
-	Title string `json:"title"`
-	Post string `json:"post"`
+	Email string `json:"email"`
+	Password string `json:"password"`
+	FullName string `json:"fullname"`
 }
 
 func NewsfeedPost(feed newsfeed.Adder) gin.HandlerFunc {
@@ -18,8 +19,9 @@ func NewsfeedPost(feed newsfeed.Adder) gin.HandlerFunc {
 		c.Bind(&requestBody)
 
 		item := newsfeed.Item{
-			Title: requestBody.Title,
-			Post: requestBody.Post,
+			Email: requestBody.Email,
+			Password: requestBody.Password,
+			FullName: requestBody.FullName,
 		}
 		feed.Add(item)
 
