@@ -1,5 +1,5 @@
 module.exports = {
-  url: "mongodb+srv://ryan:<password>@artworks.fhe8n6r.mongodb.net/?retryWrites=true&w=majority",
+  url: "mongodb://0.0.0.0:27017/",
   database: "Arts",
   imgBucket: "photos",
 };
