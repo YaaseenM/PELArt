@@ -11,6 +11,7 @@ type newsfeedPostRequest struct {
 	Email string `json:"email"`
 	Password string `json:"password"`
 	FullName string `json:"fullname"`
+	ImageList []string `json:"imagelist"`
 }
 
 func NewsfeedPost(feed newsfeed.Adder) gin.HandlerFunc {
@@ -22,6 +23,7 @@ func NewsfeedPost(feed newsfeed.Adder) gin.HandlerFunc {
 			Email: requestBody.Email,
 			Password: requestBody.Password,
 			FullName: requestBody.FullName,
+			ImageList: requestBody.ImageList,
 		}
 		feed.Add(item)
 
