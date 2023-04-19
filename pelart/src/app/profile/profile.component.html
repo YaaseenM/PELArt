@@ -1,3 +1,4 @@
+<h1>Make a post to upload your art</h1>
 <div>
     <div>
         <div>Title</div>
@@ -16,9 +17,11 @@
 <br>
 
 <div *ngFor="let newsfeedItem of newsfeedItems">
-    <div>{{newsfeedItem.email}}</div>
+    <h1>{{newsfeedItem.email}}</h1>
     <div>{{newsfeedItem.password}}</div>
     <br>
-    <app-create-profile></app-create-profile>
+    <br>
+    <br>
+    <app-file-upload></app-file-upload>
 </div>
 

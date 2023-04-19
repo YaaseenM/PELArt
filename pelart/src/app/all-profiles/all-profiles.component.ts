@@ -3,6 +3,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ProfileService } from '../services/profile.service';
 import { Profile } from '../models/profile';
 import { Subscription } from 'rxjs';
+import { FileUploadService } from '../services/file-upload.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-all-profiles',
@@ -13,14 +15,13 @@ export class AllProfilesComponent implements OnInit, OnDestroy {
   profiles: Profile[]=[];
   private profileSubscription!: Subscription
 
-  constructor(private profileService: ProfileService){}
+  constructor(private fileService: FileUploadService){}
 
   ngOnInit(): void {
-    this.profileService.getProfiles();
-    this.profileSubscription=this.profileService.getProfileStream().subscribe((profiles: Profile[])=>{
-      this.profiles=profiles
-    })
+    this.fileInfos = this.fileService.getFiles();
   }
+  
+  fileInfos?: Observable<any>;
 
   ngOnDestroy(): void {
     this.profileSubscription.unsubscribe();

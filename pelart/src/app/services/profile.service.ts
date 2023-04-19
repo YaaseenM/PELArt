@@ -12,7 +12,7 @@ import { Subject } from 'rxjs';
 export class ProfileService {
   private profiles: Profile[]=[];
   private profiles$=new Subject<Profile[]>()
-  readonly url= "http://localhost:8080/api/profiles"
+  readonly url= "http://localhost:8082/files"
 
   constructor(private http: HttpClient) { }
 

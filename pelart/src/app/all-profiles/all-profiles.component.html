@@ -1,12 +1,10 @@
-<h1>PELArt Collection</h1>
+<h1>PELArt Image Collection</h1>
 
-<hr>
-<div *ngIf="profiles.length > 0">
-    <div *ngFor="let profile of profiles" class="profile">
-        <img [src]="profile.imagePath" [alt]="profile.name">
-        <div>
-            <span>{{profile.name}}</span>
-        </div>
-
-    </div>
-</div>
+<div class="card mt-3">
+    <div class="card-header">List of Files</div>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let file of fileInfos | async" class="list-group-item">
+        <a href="{{ file.url }}">{{ file.name }}</a>
+      </li>
+    </ul>
+  </div>
