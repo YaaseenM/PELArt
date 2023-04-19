@@ -12,14 +12,13 @@
     </div>
     <button (click)="addPost()">Add Post</button>
 </div>
-
-<br>
-<br>
+<hr>
 <br>
 
 <div *ngFor="let newsfeedItem of newsfeedItems">
     <div>{{newsfeedItem.email}}</div>
     <div>{{newsfeedItem.password}}</div>
     <br>
-    <app-file-upload></app-file-upload>
+    <app-create-profile></app-create-profile>
 </div>
+

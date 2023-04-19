@@ -14,6 +14,7 @@ export class FileUploadComponent implements OnInit {
   progress = 0;
   message = '';
 
+
   ngOnInit(): void {
     this.fileInfos = this.uploadService.getFiles();
   }

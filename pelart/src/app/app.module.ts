@@ -13,6 +13,8 @@ import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { CreateProfileComponent } from './create-profile/create-profile.component';
+import { AllProfilesComponent } from './all-profiles/all-profiles.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     ProfileComponent,
     LoginComponent,
     SignupComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    CreateProfileComponent,
+    AllProfilesComponent
   ],
   imports: [
     BrowserModule,

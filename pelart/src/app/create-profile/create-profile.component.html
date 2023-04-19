@@ -1,0 +1,18 @@
+<p>Upload Image</p>
+
+<form [formGroup]="form" (submit)="onSubmit()">
+<div>
+    <input formControlName="name" type="text" placeholder="Enter Name...">
+</div>
+<div>
+    <input (change)="onFileSelect($event)" type="file" name="" id="">
+</div>
+<div *ngIf="imageData">
+    <img [src]="imageData" [alt]="form.value.name">
+</div>
+<div>
+    <button type="submit">Upload</button>
+</div>
+<hr>
+<br>
+</form>
