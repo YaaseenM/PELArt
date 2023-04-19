@@ -6,11 +6,6 @@
         type="text"
         placeholder="Enter your Title">
     </div>
-    <div>
-        <div>Post</div>
-        <input [(ngModel)]="password"
-         type="text" placeholder="Enter your Post ">
-    </div>
     <button (click)="addPost()">Add Post</button>
 </div>
 <hr>
@@ -18,8 +13,6 @@
 
 <div *ngFor="let newsfeedItem of newsfeedItems">
     <h1>{{newsfeedItem.email}}</h1>
-    <div>{{newsfeedItem.password}}</div>
-    <br>
     <br>
     <br>
     <app-file-upload></app-file-upload>

@@ -50,13 +50,25 @@ describe('My First Test', () => {
     cy.visit('http://localhost:4200/')
     cy.contains('Profile').click()
     cy.get(':nth-child(1) > .ng-untouched').type('test1')
-    cy.get(':nth-child(2) > .ng-pristine').type('test2')
-    cy.get('app-profile > :nth-child(1) > button').click()
+    cy.get('app-profile > :nth-child(2) > button').click()
     cy.contains('test1')
-    cy.contains('test2')
     cy.request('POST','http://localhost:4200/api/newsfeed',{email: 'test3',password:'test4'})
-    cy.get('app-profile > :nth-child(1) > button').click()
+    cy.get('app-profile > :nth-child(2) > button').click()
     cy.contains('test3')
-    cy.contains('test4')
+  })
+
+  it('Successfully uploads images', () => {
+    cy.visit('http://localhost:4200/')
+    cy.contains('Profile').click()
+    cy.get(':nth-child(5) > app-file-upload > .row > .col-8 > .btn > input').selectFile('Screenshot (9).png')
+    cy.get(':nth-child(5) > app-file-upload > .row > .col-4 > .btn').click()
+    cy.contains('File has been uploaded')
+
+
+  })
+  
+  it('Successfully displays image on front page', () =>{
+    cy.visit('http://localhost:4200/')
+    cy.contains('Screenshot (9).png')
   })
 })
