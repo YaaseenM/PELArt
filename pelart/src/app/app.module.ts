@@ -4,7 +4,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -19,7 +18,6 @@ import { AllProfilesComponent } from './all-profiles/all-profiles.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     NavbarComponent,
     HomeComponent,
     ProfileComponent,
