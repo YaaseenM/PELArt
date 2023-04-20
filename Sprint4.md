@@ -24,3 +24,11 @@ PUT, PATCH, and DELETE. We wanted to add the PATCH function as we want to find a
 I implemented the PATCH function and image list inside all the GO functions. After the implementation was done, I wanted to test if the function would work or not. I 
 have also updated the other test functions to include an array of either an empty array or an array with two images in it. The patch test does full testing to see if
 initializing the user works. After that, we use the patch function to make sure it correctly inputs another file to the image list.
+
+Steps for running tests:
+Make sure to open command prompt
+Run the Node.JS upload images:node src/server.js (Runs on localhost:8082)
+Run GO test cases: go test -cover ./...
+Run GO API: go run httpd/main.go
+
+
