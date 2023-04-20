@@ -14,6 +14,18 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Running the program (all comands case sensitive)
+1. Open command prompt 
+2. cd pelart
+3. npm start
+4. Open another command prompt
+5. cd api 
+6. go run httpd/main.go
+7. open another command prompt
+8. cd UploadImages 
+9. node src/server.js
+10. view the application on http://localhost:4200/
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
