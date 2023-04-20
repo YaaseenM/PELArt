@@ -1,15 +1,15 @@
-Work Completed for Front-end:
+Work Completed for Front-end: Added file upload functionality, added component to be displayed on the front page pulling all file data from the mongodb server and displaying them alongside the link. Remade the Profile page to allow file uploading alongside a progress bar. Cleaned up a couple issues and bugs, navigation from home bug fixed.
 
 Work Completed for Back-end: Added a way to link the images uploaded to the user who has uploaded. This is done by creating an image list on a user profile that holds all the file names of the images they have uploaded. I created a PATCH function that could allow us to update the image list whenever the user has uploaded a new image.
 This allows us know on the front-end who has upload what image. Updated old test cases to have the image list in them, and added another test to make sure the PATCH 
 function works.
-
 
 Front-end test cases: 
 Gets, Types and asserts: Tests to see if the page runs, tests to see if navigation bar is displaying properly 
 Routes: Tests to see if routing is working properly, checks url to make sure it is correct, also tests routing through the navbar dropdown 
 Signup/Login works: Tests to see if routing to signup works, enters mock values for signup page, and runs the signup method to see if it properly posts to the api. Then routes to the login page and tests the login method to make sure it properly gets values from the api to check if the user exists. Also checks to see if login properly routes when the method is successful 
 Profile posting through api and through text field: Tests to see if the post and get methods works through the profile page Also added mounting for most components for component testing
+Uploadfile through mongodb server/uploadFile api, tests to make sure file gets uploaded and checks to make sure all files are properly being displayed on the front page
 
 Back-end test cases: 
 User profile insert: Test to see if we can insert an object into the api. Preiously of Sprint 4, we tested using three items. Now, it tests for four items where one of them is an array. It will return an error if the items were unable to be added to the api. 
