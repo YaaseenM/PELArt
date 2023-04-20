@@ -1,6 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-
-import { ProfileService } from '../services/profile.service';
+import { Component, OnInit } from '@angular/core';
 import { Profile } from '../models/profile';
 import { Subscription } from 'rxjs';
 import { FileUploadService } from '../services/file-upload.service';
@@ -11,7 +9,7 @@ import { Observable } from 'rxjs';
   templateUrl: './all-profiles.component.html',
   styleUrls: ['./all-profiles.component.scss']
 })
-export class AllProfilesComponent implements OnInit, OnDestroy {
+export class AllProfilesComponent implements OnInit {
   profiles: Profile[]=[];
   private profileSubscription!: Subscription
 
@@ -23,7 +21,5 @@ export class AllProfilesComponent implements OnInit, OnDestroy {
   
   fileInfos?: Observable<any>;
 
-  ngOnDestroy(): void {
-    this.profileSubscription.unsubscribe();
-  }
+
 }

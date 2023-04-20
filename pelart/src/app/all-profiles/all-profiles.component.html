@@ -5,6 +5,9 @@
     <ul class="list-group list-group-flush">
       <li *ngFor="let file of fileInfos | async" class="list-group-item">
         <a href="{{ file.url }}">{{ file.name }}</a>
+        <br>
+        <img [src]="file.url" alt="Not Found">
       </li>
     </ul>
   </div>
+  
