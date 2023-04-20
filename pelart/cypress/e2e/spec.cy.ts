@@ -5,10 +5,9 @@ describe('My First Test', () => {
 
     cy.contains('Home')
     cy.contains('Profile')
-    cy.contains('About')
-    cy.contains('Dropdown').click()
     cy.contains('Login')
-    
+    cy.contains('Signup')
+
   })
   it('Routes', () => {
     cy.visit('http://localhost:4200/')
@@ -16,9 +15,6 @@ describe('My First Test', () => {
     cy.contains('Home')
     cy.contains('Profile').click()
     cy.url().should('include', '/profile')
-    cy.contains('About').click()
-    cy.url().should('include', '/about')
-    cy.contains('Dropdown').click()
     cy.contains('Login').click()
     cy.url().should('include', '/login')
     cy.get('.card > a').click()
@@ -28,8 +24,6 @@ describe('My First Test', () => {
   it('Signup/Login Works', () => {
     
     cy.visit('http://localhost:4200/')
-    
-    cy.contains('Dropdown').click()
     cy.contains('Login').click()
     cy.url().should('include', '/login')
     cy.get('.card > a').click()
